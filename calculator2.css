@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Amaranth&family=Montserrat&family=Tiro+Kannada:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  height: 400px;
+  margin: 0;
+  background-image: url("pretty\ wallpaper.jpg");
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Amaranth", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.calculator_keys {
+  display: grid;
+  width: 25%;
+  margin: 20px auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Amaranth", sans-serif;
+  height: 40px;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50%,
+    rgba(0, 0, 0, 0.04)
+  );
+
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+    0 1px 0 0 rgba(255, 255, 255, 0.15);
+
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.button:hover {
+  background: grey;
+}
+
+.operator {
+  background-color: mediumvioletred;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  font-family: "Amaranth", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50%,
+    rgba(0, 0, 0, 0.04)
+  );
+
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+    0 1px 0 0 rgba(255, 255, 255, 0.15);
+
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.operator:hover {
+  background: rgb(165, 105, 105);
+}
+
+.button_equal-sign {
+  background-color: rgb(8, 8, 77);
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3;
+  font-family: "Amaranth", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50%,
+    rgba(0, 0, 0, 0.04)
+  );
+
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+    0 1px 0 0 rgba(255, 255, 255, 0.15);
+
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.button_equal-sign:hover {
+  background: rgb(56, 56, 122);
+}
+
+.clear {
+  height: 40px;
+  width: 45px;
+  background-color: rgb(153, 6, 6);
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3;
+  font-family: "Amaranth", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50%,
+    rgba(0, 0, 0, 0.04)
+  );
+
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+    0 1px 0 0 rgba(255, 255, 255, 0.15);
+
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.clear:hover {
+  background: rgb(143, 68, 68);
+}
+
+.screen {
+  background-color: rgb(201, 222, 228);
+
+  justify-content: right;
+
+  color: black;
+
+  font-size: large;
+
+  width: 50%;
+
+  height: 40%;
+
+  cursor: default;
+
+  padding: 10px;
+
+  padding-left: 42%;
+  margin: auto;
+
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* media queries */
+@media (min-width: 320px) and (max-width: 420px) {
+  .container {
+    width: 100%;
+    max-height: 800px;
+    /* background: yellow; */
+    max-width: 100%;
+    margin: 0;
+  }
+  .button {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    height: 35px;
+  }
+  .screen {
+    /* display: grid; */
+    width: 65%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid rgb(34, 34, 34);
+    margin-top: 40px;
+    padding: 20px;
+    margin-left: 40pt;
+    /* height: 100px; */
+  }
+
+  .calculator_keys {
+    display: grid;
+    width: 50%;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1023px) {
+  .container {
+    width: auto;
+    max-height: 800px;
+    max-width: 100%;
+    margin: 0;
+  }
+  .button {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .screen {
+    /* display: grid; */
+    width: 43%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid rgb(34, 34, 34);
+    margin-top: 40px;
+    padding: 30px;
+    margin-left: 170pt;
+    /* height: 100px; */
+  }
+
+  .calculator_keys {
+    display: grid;
+    width: 30%;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 720px) {
+  .container {
+    width: auto;
+    max-height: 700px;
+    /* background: violet */
+    max-width: 100%;
+    margin: 0;
+  }
+  .button {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 16px;
+  }
+
+  .screen {
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 40px;
+    padding: 30px;
+    margin-left: 100pt;
+    /* height: 100px; */
+  }
+
+  .calculator_keys {
+    display: grid;
+    width: 47%;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: auto;
+    height: 500px;
+    /* background: yellow; */
+    max-width: 100%;
+    margin: 0;
+  }
+  .button {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 16px;
+  }
+
+  .screen {
+    width: 25%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 40px;
+    padding: 30px;
+    margin-left: 380pt;
+    /* height: 100px; */
+  }
+
+  .calculator_keys {
+    display: grid;
+    width: 25%;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 319px) {
+  .container {
+    width: auto;
+    max-height: 400px;
+    /* background: pink; */
+    max-width: 100%;
+    margin: 0;
+  }
+  .button {
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .screen {
+    display: grid;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 40px;
+    padding: 30px;
+    /* height: 100px; */
+  }
+
+  .calculator_keys {
+    display: grid;
+    width: 75%;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
